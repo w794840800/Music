@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <ImageView android:id="@+id/imageButton_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/imageButton_more"
+
+        android:paddingTop="8dp"
+        android:id="@+id/recyc_song_name"
+        android:text="海口"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp" />
+    <TextView
+        android:layout_below="@id/recyc_song_name"
+       android:paddingBottom="5dp"
+        android:id="@+id/recyc_song_author"
+        android:text="周杰伦"
+        android:textSize="12sp"
+        android:textColor="#aaa"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <TextView
+        android:paddingBottom="5dp"
+        android:layout_toLeftOf="@id/imageButton_more"
+        android:layout_below="@id/recyc_song_name"
+        android:layout_toRightOf="@id/recyc_song_author"
+
+        android:id="@+id/recyc_song_album"
+        android:text="  摩羯座"
+        android:textColor="#aaa"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+
+</RelativeLayout>

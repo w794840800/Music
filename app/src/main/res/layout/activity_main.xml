@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="?attr/colorPrimary"
+
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:tabSelectedTextColor="#f00"
+
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        >
+    </android.support.v4.view.ViewPager>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/contorl_player"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="50dp"
+            android:layout_weight="12"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/play_song_name"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="离别的车站"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_below="@id/play_song_name"
+                android:id="@+id/play_song_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵薇"
+                android:layout_marginLeft="12dp"
+                android:textSize="12sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+
+            android:layout_width="0dp"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <ImageButton
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_skip_previous_black_24dp"
+                android:id="@+id/imageButton_previous"
+
+                />
+            <ImageButton
+                android:id="@+id/imageButton_play_pause"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_music"
+
+                />
+
+            <ImageButton
+                android:id="@+id/imageButton_next"
+                android:background="@null"
+                android:layout_gravity="center"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_skip_next_black_48dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

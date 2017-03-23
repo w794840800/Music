@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SimpleMusic</string>
+    <string name="hint_search">请输入歌名</string>
+</resources>
